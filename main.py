@@ -21,8 +21,8 @@ def start():
             generated_mac = RandMac(example_mac)            
             print("[+] Generated 6-byte mac address: ",generated_mac)
             
-        end = time.time()
-        print("\n\n\t[*] Total time elapsed:>  ", end - start_time)
+        end = round(time.time() - start_time ,2)
+        print("\n\n\t[*] Total time elapsed:>  ", end ,"sec")
             
     except ValueError:
         os.system('cls' if os.name == 'nt' else 'clear')
